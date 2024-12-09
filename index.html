@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>170324</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1><span>Selamat</span><br>Ulang Tahun</h1>
+            <p>Anis Uswatun Syahdah Puteri</p>
+
+            <a href="#banner" class="scroll-btn"><i class="fas fa-arrow-down"></i> Lihat Ceritaku Tentang Kamu</a>
+            <script>
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+            </script>
+            
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <h1>Awal <span>Cerita.</span></h1>
+            <p> Percakapan pertama ini menjadi awal dari kisah yang penuh cerita dan kebahagiaan. Setiap pesan yang tertukar membawa kita lebih dekat satu sama lain.</p>
+        </div>
+    </section>
+
+    <section id="journey">
+        <div class="journey-content">
+            <h1>Momen <span>Kita Bersama.</span></h1>
+            <div class="gallery">
+                <div class="photo"><img src="Assets/momen-1.jpeg" alt="Foto 1"></div>
+                <div class="photo"><img src="Assets/momen-2.jpeg" alt="Foto 2"></div>
+                <div class="photo"><img src="Assets/momen-3.jpeg" alt="Foto 3"></div>
+                <div class="photo"><img src="Assets/momen-4.jpeg" alt="Foto 4"></div>
+                <div class="photo"><img src="Assets/momen-5.jpeg" alt="Foto 5"></div>
+                <div class="photo"><img src="Assets/momen-6.jpeg" alt="Foto 6"></div>
+            </div>
+            <p>Meski waktu kita bersama tidak banyak, namun setiap momen yang kita habiskan terasa begitu berharga. justru yang sedikit itu membuatku semakin menghargai setiap detik bersamamu.</p>
+        </div>
+    </section>
+
+    <section class="transformation-section">
+        <h2>Perkembangan <span> Anis.</span></h2>
+        <div class="transformation-grid">
+          <!-- Perubahan 1 -->
+          <div class="transformation-item">
+            <div class="icon">
+              <img src="Assets/masak.jpeg" alt="Ikon memasak">
+            </div>
+            <div class="text">
+              <h3>Dulu Malas Masak</h3>
+              <p>Sekarang mulai suka memasak dan mencoba resep baru</p>
+            </div>
+          </div>
+      
+          <!-- Perubahan 2 -->
+          <div class="transformation-item">
+            <div class="icon">
+              <img src="Assets/hitung.jpeg" alt="Ikon pengeluaran">
+            </div>
+            <div class="text">
+              <h3>Dulu Suka Boros</h3>
+              <p>Sekarang sudah bisa mengatur pengeluaran dan juga menabung untuk masa depan.</p>
+            </div>
+          </div>
+      
+          <!-- Perubahan 3 -->
+          <div class="transformation-item">
+            <div class="icon">
+              <img src="Assets/pikir.jpeg" alt="Ikon berpikir panjang">
+            </div>
+            <div class="text">
+              <h3>Dulu Berpikir Pendek</h3>
+              <p>Sekarang lebih bijak, tidak mudah tergesa-gesa, dan selalu mempertimbangkan keputusan dengan matang.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="surat-cinta-section">
+        <div class="surat-cinta-content">
+            <div class="surat-cinta-box">
+                <div class="surat-cinta-image">
+                    <img src="Assets/Mail.png" alt="Gambar Surat Cinta" />
+                </div>
+                <div class="surat-cinta-message">
+                    <h1>Hai <span>Sayang,</span></h1>
+                    <p class="body">
+                        Terima kasih atas kehadiran Anis membuat hidup ini terus berkembang dan menjadi lebih baik. Perjalanan Anis memang tidak mudah , anis sudah melalui banyak rintangan, mulai dari masalah hutang, mama yang sakit, hingga masalah di pekerjaan yang menguji kesabaran anis. Tapi anis orang yang kuat dan mampu melewati semua itu. Jangan pernah merasa sendiri, karena aku akan selalu ada di sini untukmu. Bersama-sama, kita bisa menghadapi apapun yang datang."
+                    </p>
+                    <p class="closing">Dengan cinta,</p>
+                    <p class="name">Anis Uswatun Syahdah Puteri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

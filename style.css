@@ -1,0 +1,370 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Header */
+header {
+    background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50vh),
+    url('./Assets/hero-img.jpg'); /* Sesuaikan path gambar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh; /* Menutupi seluruh tinggi viewport */
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#F5F5F5;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.header-text{
+    margin: 0;
+    padding-top: 20%;
+    color: #F5F5F5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 0.9;
+}
+
+.header-text span {
+    color: #d80000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-size: 6rem; /* Menyesuaikan ukuran font */
+    margin: 0;
+}
+.header-text h1 {
+    font-size: 6rem; /* Menyesuaikan ukuran font */
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 1.5rem; /* Menyesuaikan ukuran font paragraf */
+}
+.scroll-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #d80000; /* Warna pink lembut */
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background-color: #ff3d2e; /* Warna lebih gelap saat hover */
+    transform: scale(1.1); /* Efek membesar */
+}
+
+/* Media Query untuk layar kecil (ponsel) */
+@media screen and (max-width: 768px) {
+    .header-text {
+        margin-top: 40vh;
+        padding: 10px; /* Kurangi padding untuk teks */
+        line-height: 0.9;
+    }
+
+    .header-text span {
+        font-size: 5rem; /* Perkecil ukuran teks "Selamat" */
+    }
+
+    .header-text h1 {
+        font-size: 3rem; /* Perkecil ukuran teks utama */
+    }
+
+    .header-text p {
+        font-size: 1rem; /* Perkecil ukuran paragraf */
+    }
+    .scroll-btn {
+        padding: 5px 10px;
+    }
+}
+
+/* header */
+
+/* Awal Cerita */
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Sesuaikan tinggi banner */
+    background: url('Assets/chat-bg.jpg') no-repeat center center/cover; /* Path gambar banner */
+}
+
+/* Konten di atas banner */
+.banner-content {
+    position: absolute; /* Supaya berada di atas gambar */
+    align-items: center;
+    text-align: center; /* Pusatkan teks */
+    color: #fff; /* Warna teks putih agar kontras */
+    font-family: 'Poppins', sans-serif;
+    max-width: 80%; /* Batasi lebar teks */
+    line-height: 1.6; /* Tingkatkan spasi antar baris */
+    padding: 10px; /* Tambahkan padding agar lebih nyaman */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-content  h1 {
+    font-size: 36px;
+  }
+
+  .banner-content  p {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  .banner-content span{
+    color: #d80000;
+    font-weight: 200;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Warna hitam dengan transparansi */
+  }
+
+/* Responsivitas untuk ukuran mobile */
+@media screen and (max-width: 768px) {
+    #banner {
+        height: 320px; /* Tinggi banner disesuaikan di mobile */
+        width: 100%;
+    }
+
+    .banner-content  h1 {
+        font-size: 1.5rem;
+      }
+    
+      .banner-content  p {
+        font-size: 12px;
+      }
+}
+/* Awal Cerita*/
+
+
+/* Journey */
+#journey{
+    min-height: 100vh;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.journey-content p {
+    font-size: 14px;
+}
+
+.journey-content{
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.journey-content h1{
+    font-size: 1.5rem;
+}
+
+.journey-content span{
+    color: #d80000;
+    font-weight: 200;
+  }
+
+  .photo-gallery h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .gallery {
+    display: grid;
+    gap: 20px; /* Space between photos */
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for desktop */
+  }
+  
+  .photo {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+
+    .journey-content  h1 {
+        font-size: 1.5rem;
+      }
+    
+      .journey-content  p {
+        font-size: 12px;
+      }
+  }
+  
+
+  .transformation-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .transformation-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #fff
+  }
+  .transformation-section span {
+    color: #d80000;
+    font-weight: 200;
+  }
+  
+  /* Grid Container */
+  .transformation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk desktop */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Item Styles */
+  .transformation-item {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .transformation-item .icon img {
+    width: 100%;          /* Membuat gambar memenuhi lebar elemen */
+    height: 250px;        /* Tentukan tinggi yang sama untuk semua gambar */
+    object-fit: cover;    /* Memastikan gambar tetap proporsional tanpa merusak aspek rasio */
+    margin-bottom: 5x;
+    border-radius: 8px;   
+  }
+  
+  .transformation-item h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .transformation-item p {
+    font-size: 14px;
+    color: #F5F5F5;
+    font-weight: 200;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .transformation-grid {
+      grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+    }
+
+    .transformation-item p {
+        font-size: 12px;
+      }
+  }
+
+  /* Surat Cinta Section */
+.surat-cinta-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.surat-cinta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* .surat-cinta-box {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+} */
+
+.surat-cinta-message {
+    flex: 1;
+    text-align: center;
+}
+
+.surat-cinta-message h1{
+    font-size: 1.5rem;
+    color: #fff
+}
+
+.surat-cinta-message span{
+    color: #d80000;
+    font-weight: 200;
+}
+.surat-cinta-message .body {
+    font-size: 18px;
+    color: #F5F5F5;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.surat-cinta-message .closing {
+    font-size: 18px;
+    color: #F5F5F5;
+}
+
+.surat-cinta-message .name {
+    font-size: 20px;
+    font-weight: 200;
+    color: #d80000;
+}
+
+.surat-cinta-image img {
+    width: 400px;
+    height: auto;
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .surat-cinta-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .surat-cinta-image img {
+        width: 350px;
+    }
+    .surat-cinta-message .body {
+        font-size: 14px;
+    }
+    
+    .surat-cinta-message .closing {
+        font-size: 14px;
+    }
+    .surat-cinta-message .name {
+        font-size: 14px;
+    }
+
+}
